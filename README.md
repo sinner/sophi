@@ -3,7 +3,8 @@ sophi
 
 Sophi es una aplicacion la cual quede debiendo en el concurso de Symfony2 Sprint Mucho+Symfony. A continuacion el briefing de la aplicacion:
 
-menús de comidas
+Menús de Comidas
+================
 
 La idea es agregar todo lo necesario en una aplicación para la correcta planificación de un menú con recetas para desayunos, comidas, meriendas y cenas y obtención de la lista de la compra resultante.
 
