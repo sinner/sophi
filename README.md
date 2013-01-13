@@ -21,6 +21,4 @@ A continuación ponemos algunas de las características que el equipo de muchoma
 
 * Según el Banco de Alimentos, los españoles tiramos anualmente a la basura 9 millones de toneladas de alimentos en buen estado. La industria alimentaria desecha 40 %, los restaurantes tiran un 14% a los contenedores, los supermercados un 5 % y los hogares un 41%.
 
-Nueve millones de toneladas de alimentos se tiran cada año a la basura en España (Fuente cadenaser.com)
-
-
+Nueve millones de toneladas de alimentos se tiran cada año a la basura en España (Fuente cadenaser.com) http://goo.gl/P4CBu
