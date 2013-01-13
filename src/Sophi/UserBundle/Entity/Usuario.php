@@ -19,18 +19,8 @@ class Usuario extends BaseUser
      */
     protected $id;
 
-    /**
-     * @ORM\ManyToMany(targetEntity="Grupo", inversedBy="usuarios")
-     * @ORM\JoinTable(name="fos_usuarios_x_grupos",
-     *      joinColumns={@ORM\JoinColumn(name="user_id", referencedColumnName="id")},
-     *      inverseJoinColumns={@ORM\JoinColumn(name="group_id", referencedColumnName="id")}
-     *      )
-     */
-    protected $grupos;
-
     public function __construct(){
         parent::__construct();
-        $this->grupos = new ArrayCollection();
     }
 
     /**
