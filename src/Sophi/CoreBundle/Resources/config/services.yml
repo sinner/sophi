@@ -1,0 +1,7 @@
+parameters:
+#    sophi_core.example.class: Sophi\CoreBundle\Example
+
+services:
+#    sophi_core.example:
+#        class: %sophi_core.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

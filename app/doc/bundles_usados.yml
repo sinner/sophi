@@ -1,0 +1,5 @@
+# Bundles de Terceros Utilizados en la Aplicacion
+
+bundles:
+    RfLadybug: { url: "https://github.com/raulfraile/LadybugBundle", composer: "raulfraile/ladybug-bundle": "dev-master" }
+    FOSUser: { url: "https://github.com/FriendsOfSymfony/FOSUserBundle", composer: "friendsofsymfony/user-bundle": "*" }

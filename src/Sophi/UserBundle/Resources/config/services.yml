@@ -1,0 +1,7 @@
+parameters:
+#    sophi_user.example.class: Sophi\UserBundle\Example
+
+services:
+#    sophi_user.example:
+#        class: %sophi_user.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
