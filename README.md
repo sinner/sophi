@@ -1,4 +1,4 @@
-sophi
+Sophi
 =====
 
 Sophi es una aplicacion la cual quede debiendo en el concurso de Symfony2 Sprint Mucho+Symfony. A continuacion el briefing de la aplicacion:
