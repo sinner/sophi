@@ -1,9 +1,9 @@
-        {% stylesheets '@SophiCoreBundle/Resource/public/css/bootstrap.css'
-            '@SophiCoreBundle/Resource/public/css/bootstrap-responsive.min.css'
-            '@SophiCoreBundle/Resource/public/css/style.css'
-            '@SophiCoreBundle/Resource/public/css/style-responsive.css'
-            '@SophiCoreBundle/Resource/public/css/sophi.main.css'
-            output='css/compiled/main.css'
+        {% stylesheets output='bundles/sophicore/css_compiled/main.css'
+            'bundles/sophicore/css/bootstrap.css'
+            'bundles/sophicore/css/bootstrap-responsive.min.css'
+            'bundles/sophicore/css/style.css'
+            'bundles/sophicore/css/style-responsive.css'
+            'bundles/sophicore/css/sophi.main.css'
         %}
-            <link rel="stylesheet" href="{{ asset_url }}" />
+            <link type='text/css' rel="stylesheet" href="{{ asset_url }}" />
         {% endstylesheets %}

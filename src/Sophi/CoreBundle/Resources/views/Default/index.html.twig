@@ -1,1 +1,8 @@
 {% extends '::admin-layout.html.twig' %}
+{% block usuario %}
+    {% if is_granted("ROLE_USER") %}
+        {{ app.user.completeName }}
+    {% else %}
+        Sin Permisos
+    {% endif %}
+{% endblock usuario %}

@@ -19,6 +19,16 @@ class Usuario extends BaseUser
      */
     protected $id;
 
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    protected $firstName;
+
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    protected $lastName;
+
     public function __construct(){
         parent::__construct();
     }
@@ -42,4 +52,49 @@ class Usuario extends BaseUser
         }
     }
 
+   /**
+    * @return String $firstName 
+    */
+    public function getFirstName()
+    {
+        return $this->firstName;
+    }
+    
+   /*
+    * @param String $firstName
+    */
+    public function setFirstName($firstName)
+    {
+        $this->firstName = $firstName;
+        return $this;
+    }
+
+    /**
+     * @return String $lastName 
+     */
+    public function getLastName()
+    {
+        return $this->lastName;
+    }
+    
+    /*
+     * @param String $lastName
+     */
+    public function setLastName($lastName)
+    {
+        $this->lastName = $lastName;
+        return $this;
+    }
+
+    public function getCompleteName()
+    {
+        return (string) $this->getFirstName." ".$this->getLastName;
+    }
+
+    public function __toString()
+    {
+        return (string) $this->getCompleteName();
+    }
+
+    
 }
