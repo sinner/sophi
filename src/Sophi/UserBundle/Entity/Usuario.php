@@ -20,12 +20,12 @@ class Usuario extends BaseUser
     protected $id;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(name="first_name", type="string", length=100)
      */
     protected $firstName;
 
     /**
-     * @ORM\Column(type="string", length=100)
+     * @ORM\Column(name="last_name", type="string", length=100)
      */
     protected $lastName;
 
@@ -88,7 +88,7 @@ class Usuario extends BaseUser
 
     public function getCompleteName()
     {
-        return (string) $this->getFirstName." ".$this->getLastName;
+        return (string) $this->getFirstName()." ".$this->getLastName();
     }
 
     public function __toString()
