@@ -1,5 +1,5 @@
 {
-    "hash": "6a386ceca1c6ab9a1df30778964e4415",
+    "hash": "13226ee72070eb75be7e35a2a96b9b05",
     "packages": [
         {
             "name": "doctrine/common",
@@ -30,7 +30,7 @@
                     "Doctrine\\Common": "lib/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -174,7 +174,7 @@
                     "Doctrine\\Bundle\\DoctrineBundle": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -430,7 +430,7 @@
                     "JMS\\AopBundle": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "Apache"
             ],
@@ -472,7 +472,7 @@
                     "CG\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "Apache"
             ],
@@ -480,7 +480,7 @@
                 {
                     "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
+                    "homepage": "https://github.com/schmittjoh",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
@@ -531,7 +531,7 @@
                     "JMS\\DiExtraBundle": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "Apache"
             ],
@@ -574,7 +574,7 @@
                     "Metadata\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "Apache"
             ],
@@ -637,7 +637,7 @@
                     "JMS\\SecurityExtraBundle": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "Apache2"
             ],
@@ -766,7 +766,7 @@
                     "Monolog": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -910,7 +910,7 @@
                     "Sensio\\Bundle\\DistributionBundle": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -957,7 +957,7 @@
                     "Sensio\\Bundle\\FrameworkExtraBundle": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1009,7 +1009,7 @@
                     "Sensio\\Bundle\\GeneratorBundle": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1112,7 +1112,7 @@
                     "lib/swift_required.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "LGPL"
             ],
@@ -1176,7 +1176,7 @@
                     "Symfony\\Bundle\\AsseticBundle": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1292,7 +1292,7 @@
                     "Symfony\\Bundle\\SwiftmailerBundle": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1377,7 +1377,7 @@
                     "SessionHandlerInterface": "src/Symfony/Component/HttpFoundation/Resources/stubs"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1446,22 +1446,22 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.12.0",
+            "version": "v1.12.1",
             "source": {
                 "type": "git",
                 "url": "git://github.com/fabpot/Twig.git",
-                "reference": "v1.12.0"
+                "reference": "v1.12.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/fabpot/Twig/archive/v1.12.0.zip",
-                "reference": "v1.12.0",
+                "url": "https://github.com/fabpot/Twig/archive/v1.12.1.zip",
+                "reference": "v1.12.1",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "2013-01-08 13:42:43",
+            "time": "2013-01-15 20:03:52",
             "type": "library",
             "extra": {
                 "branch-alias": {
