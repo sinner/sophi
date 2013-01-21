@@ -1,0 +1,76 @@
+{% extends "SophiUserBundle::layout.html.twig" %}
+
+{% block own_styles %}
+
+        <link type='text/css' rel="stylesheet" href="{{ asset('bundles/sophicore/css/sophi.login.css') }}" />
+        <link type='text/css' rel="stylesheet" href="{{ asset('bundles/sophicore/css/font-awesome.css') }}" />
+        <link type='text/css' rel="stylesheet" href="{{ asset('bundles/sophicore/css/check-radio.css') }}" />
+
+{% endblock own_styles %}
+
+{% block header %}
+
+    {{ parent() }}
+
+    <header>
+
+        <h1>
+            <img src="{{ asset('bundles/sophicore/img/cake-logo.png') }}" alt="Cake">
+            <strong>Sophi</strong>
+        </h1>
+        <h2>M&aacute;s que un Restaurant</h2>
+
+        <div class="support-note">
+            <span class="note-ie">Disculpe, solo para navegadores modernos. (Chrome, Firefox, Opera, Safari...)</span>
+        </div>
+
+    </header>
+
+{% endblock header %}
+
+{% block fos_user_content %}
+
+    {% if error %}
+        <div align="center" class="error">{{ error|trans({}, 'FOSUserBundle') }}</div>
+    {% endif %}
+
+        <section class="main">
+
+            <form class="form-1" action="{{ path("fos_user_security_check") }}" method="post">
+
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+
+                <p class="field">
+                    <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" placeholder="Usuario" />
+                    <i class="icon-user icon-large"></i>
+                </p>
+
+                <p class="field">
+                    <input type="password" id="password" name="_password" required="required" placeholder="Clave" />
+                    <i class="icon-lock icon-large"></i>
+                </p>
+
+                <p class="submit">
+                    <button type="submit" id="_submit" name="_submit">
+                        <i class="icon-arrow-right icon-large"></i>
+                    </button>
+                </p>
+
+            </form>
+
+            <div align="center">
+                <span style="position: relative; top: -5px;">Recu&eacute;rdame:</span>
+                <input type="checkbox" id="remember_me" name="_remember_me" value="on" class="regular-checkbox" />
+                <label for="remember_me" title="Recordar la Sesi&oacute;n"></label>
+            </div>
+
+        </section>
+
+{% endblock fos_user_content %}
+
+{% block own_javascripts %}
+
+            <script type="text/javascript" src="{{ asset('bundles/sophicore/js/jquery.placeholder.min.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('bundles/sophicore/js/modernizr.custom.63321.js') }}"></script>
+
+{% endblock own_javascripts %}

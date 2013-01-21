@@ -104,6 +104,10 @@
     margin-bottom: 0px;
 }
 
+#option_user_admin, #title_admin{
+    margin-top: 10px;
+}
+
 
 /*
 #sidebar > ul ul li:first-child a {

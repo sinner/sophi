@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <!-- start: Meta -->
+        <meta charset="utf-8">
+        <title>{% block title %}Login{% endblock title %} | Sophi - More than a Restaurant</title>
+        <meta name="description" content="Sophi Restaurant">
+        <meta name="author" content="Jose Gabriel Gonzalez - Symfony Venezuela">
+        <!-- end: Meta -->
+
+        <!-- start: Mobile Specific -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- end: Mobile Specific -->
+
+        <!-- start: CSS -->
+
+        {% block styles_imports %}
+
+        {% endblock styles_imports %}
+
+        {% block own_styles %}{% endblock own_styles %}
+
+
+        <!-- end: CSS -->
+
+        <!-- start: Favicon -->
+        {% block favicon %}
+            <link rel="shortcut icon" href="{{ asset('cake.ico') }}">
+        {% endblock favicon %}
+        <!-- end: Favicon -->
+
+        <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            {% block debug %}
+                <div id="div_debug">
+                    <div align="div_debug">
+                    </div>
+                </div>
+            {% endblock debug %}
+
+            <!-- start: Header -->
+            {% block header %}
+
+
+            {% endblock header %}
+            <!-- end: Header -->
+
+            <div id="under-header"></div>
+
+            <div class="container-fluid">
+
+                <div class="row-fluid">
+
+                    <noscript>
+                        <div class="alert alert-block span10">
+                            <h4 class="alert-heading">Warning!</h4>
+                            <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> enabled to use this site.</p>
+                        </div>
+                    </noscript>
+
+                    <!--[if IE]>
+
+                        <div class="alert alert-block span12">
+                            <h4 class="alert-heading">Warning!</h4>
+                            <p>Disculpe esta p&aacute;gina solo se muestra en Navegadores Modernos. Le recomendamos Firefox, Google Chrome, Opera o Safari, entre otros.</p>
+                        </div>
+
+                    <![endif]-->
+
+                    <div>
+                        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                            {{ 'layout.logged_in_as'|trans({'%username%':     app.user.username}, 'FOSUserBundle') }}     |
+                            <a href="{{ path('fos_user_security_logout') }}">
+                                {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                            </a>
+                        {% endif %}
+                    </div>
+
+                    {% for key, message in app.session.getFlashes() %}
+                    <div class="{{ key }}">
+                        {{ message|trans({}, 'FOSUserBundle') }}
+                    </div>
+                    {% endfor %}
+
+                    <div>
+                        {% block fos_user_content %}
+                        {% endblock fos_user_content %}
+                    </div>
+
+                </div><!--/fluid-row-->
+
+                <div class="clearfix"></div>
+
+
+            </div><!--/.fluid-container-->
+
+            <!-- start: JavaScript-->
+
+            {% block javascripts_imports %}
+                {% include '::javascript.html.twig' %}
+            {% endblock javascripts_imports %}
+
+            {% block own_javascripts %}{% endblock own_javascripts %}
+
+            <!-- end: JavaScript-->
+
+        </div>
+
+        <footer>
+            <hr>
+            <p class="pull-left">&copy; <a href="https://github.com/sinner/sophi" target="_blank">Sophi</a> 2013</p>
+            <p class="pull-right">Powered by: <a href="http://symfony.com">Symfony2</a></p>
+        </footer>
+
+    </body>
+
+</html>
