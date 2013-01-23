@@ -1,11 +1,11 @@
 {% extends "SophiUserBundle::layout.html.twig" %}
 
 {% block own_styles %}
-
-        <link type='text/css' rel="stylesheet" href="{{ asset('bundles/sophicore/css/sophi.login.css') }}" />
-        <link type='text/css' rel="stylesheet" href="{{ asset('bundles/sophicore/css/font-awesome.css') }}" />
-        <link type='text/css' rel="stylesheet" href="{{ asset('bundles/sophicore/css/check-radio.css') }}" />
-
+    <link type='text/css' rel="stylesheet" href="{{ asset('bundles/sophicore/css/sophi.login.css') }}" />
+    <link type='text/css' rel="stylesheet" href="{{ asset('bundles/sophicore/css/sophi.extmsgbox.css') }}" />
+    <link type='text/css' rel="stylesheet" href="{{ asset('bundles/sophicore/css/font-awesome.css') }}" />
+    <link type='text/css' rel="stylesheet" href="{{ asset('bundles/sophicore/css/check-radio.css') }}" />
+    <link type='text/css' rel="stylesheet" href="{{ asset('bundles/sophicore/css/bubble.css') }}" />
 {% endblock own_styles %}
 
 {% block header %}
@@ -21,7 +21,7 @@
         <h2>M&aacute;s que un Restaurant</h2>
 
         <div class="support-note">
-            <span class="note-ie">Disculpe, solo para navegadores modernos. (Chrome, Firefox, Opera, Safari...)</span>
+            <span class="note-ie">Disculpe, esta aplicaci&oacute;n est&aacute; hecha solo para navegadores modernos. (Chrome, Firefox, Opera, Safari...)</span>
         </div>
 
     </header>
@@ -31,7 +31,7 @@
 {% block fos_user_content %}
 
     {% if error %}
-        <div align="center" class="error">{{ error|trans({}, 'FOSUserBundle') }}</div>
+        <div align="center" class="error">{{ error|trans({ }, 'FOSUserBundle') }}</div>
     {% endif %}
 
         <section class="main">
@@ -66,11 +66,28 @@
 
         </section>
 
+        <blockquote class="oval-thought" style="bottom: 100px; right: 20px; position: absolute;">
+            <p>No posees usuario? <b><a style="color:#FFFFFF;" href="{{ path('fos_user_registration_register') }}">Reg&iacute;strate Gratis!</a></b></p>
+        </blockquote>
+
 {% endblock fos_user_content %}
 
 {% block own_javascripts %}
 
-            <script type="text/javascript" src="{{ asset('bundles/sophicore/js/jquery.placeholder.min.js') }}"></script>
-            <script type="text/javascript" src="{{ asset('bundles/sophicore/js/modernizr.custom.63321.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/sophicore/js/jquery.placeholder.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('bundles/sophicore/js/modernizr.custom.63321.js') }}"></script>
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+    <script type="text/javascript">
+
+        $(document).on('ready', function(evt){
+
+            $("#username").val('{{ app.user.username }}');
+            $("#username").attr('readonly','readonly');
+            $('#password').focus();
+
+        })
+
+    </script>
+    {% endif %}
 
 {% endblock own_javascripts %}
