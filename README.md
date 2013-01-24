@@ -60,3 +60,12 @@ Cómo usarlo
 5.- Ingresamos a la url de registro de usuarios y creamos un usuario:
     
     http://localhost/sophi/register
+
+    <?php
+    
+        $bella = new Jhuly();
+        $bella->darleUnBeeeeeesoRiquisimo();
+        $bella->verSuSonrisa();
+        $bella->verlaSiendoTercaComoSiempre();
+    
+    ?>
