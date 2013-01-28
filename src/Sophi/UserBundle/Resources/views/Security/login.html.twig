@@ -31,7 +31,7 @@
 {% block fos_user_content %}
 
     {% if error %}
-        <div align="center" class="error">{{ error|trans({ }, 'FOSUserBundle') }}</div>
+        <div align="center" class="errorBox">{{ error|trans({ }, 'FOSUserBundle') }}</div>
     {% endif %}
 
         <section class="main">
@@ -66,9 +66,11 @@
 
         </section>
 
+        {% if not is_granted("IS_AUTHENTICATED_REMEMBERED") %}
         <blockquote class="oval-thought" style="bottom: 100px; right: 20px; position: absolute;">
             <p>No posees usuario? <b><a style="color:#FFFFFF;" href="{{ path('fos_user_registration_register') }}">Reg&iacute;strate Gratis!</a></b></p>
         </blockquote>
+        {% endif %}
 
 {% endblock fos_user_content %}
 

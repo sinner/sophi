@@ -6,6 +6,9 @@ use FOS\UserBundle\Entity\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
 
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Bridge\Doctrine\Validator\Constraints as DoctrineAssert;
+
 /**
  * @ORM\Entity
  * @ORM\Table(name="fos_usuario")
@@ -20,11 +23,13 @@ class Usuario extends BaseUser
     protected $id;
 
     /**
+     * @Assert\NotBlank(message="El Nombre del usuario es un dato obligatorio.")
      * @ORM\Column(name="first_name", type="string", length=100)
      */
     protected $firstName;
 
     /**
+     * @Assert\NotBlank(message="El Apellido del usuario es un dato obligatorio.")
      * @ORM\Column(name="last_name", type="string", length=100)
      */
     protected $lastName;
@@ -36,7 +41,7 @@ class Usuario extends BaseUser
     /**
      * Agrega un rol al usuario.
      * @throws Exception
-     * @param Rol $rol 
+     * @param Rol $rol
      */
     public function addRole($rol)
     {
@@ -53,13 +58,13 @@ class Usuario extends BaseUser
     }
 
    /**
-    * @return String $firstName 
+    * @return String $firstName
     */
     public function getFirstName()
     {
         return $this->firstName;
     }
-    
+
    /*
     * @param String $firstName
     */

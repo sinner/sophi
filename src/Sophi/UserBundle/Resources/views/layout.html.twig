@@ -5,7 +5,7 @@
 
         <!-- start: Meta -->
         <meta charset="utf-8">
-        <title>{% block title %}Login{% endblock title %} | Sophi - More than a Restaurant</title>
+        <title>{% block title %}Login{% endblock title %} | Sophi - M&aacute;s que un Restaurant</title>
         <meta name="description" content="Sophi Restaurant">
         <meta name="author" content="Jose Gabriel Gonzalez - Symfony Venezuela">
         <!-- end: Meta -->
@@ -62,7 +62,7 @@
                 <div class="row-fluid">
 
                     <noscript>
-                        <div class="warning alert alert-block span10">
+                        <div class="warningBox alert alert-block span10">
                             <h4 class="alert-heading">Alerta!</h4>
                             <p>Usted necesita tener <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> habilitado para hacer uso de este Sitio Web.</p>
                         </div>
@@ -70,7 +70,7 @@
 
                     <!--[if IE]>
 
-                        <div class="alert alert-block span12">
+                        <div class="alertBox alert-block span12">
                             <h4 class="alert-heading">Warning!</h4>
                             <p>Disculpe esta p&aacute;gina solo se muestra en Navegadores Modernos. Le recomendamos Firefox, Google Chrome, Opera o Safari, entre otros.</p>
                         </div>
@@ -78,7 +78,7 @@
                     <![endif]-->
 
                     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                    <div class="warning">
+                    <div class="warningBox">
                         <p>Usted posee actualmente una sesi&oacute;n activa con el usuario 
                             <b>{{ app.user.completeName }} ({{ app.user.username }})</b>.
                         </p>
@@ -92,7 +92,7 @@
                     {% endif %}
 
                     {% for key, message in app.session.getFlashes() %}
-                    <div class="{{ key }}">
+                    <div class="{{ key }}Box">
                         {{ message|trans({}, 'FOSUserBundle') }}
                     </div>
                     {% endfor %}

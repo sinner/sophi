@@ -1,3 +1,8 @@
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    cursor: default;
+}
 
 .container-fluid{
     padding-left: 10px;
@@ -12,7 +17,7 @@
 	width: 190px;
 }
 #sidebar > ul > li {
-	display: block;	
+	display: block;
 	position: relative;
 }
 
@@ -71,7 +76,7 @@
     text-decoration: none;
     text-shadow: 1px 1px #333333;
 }
-  
+
 #sidebar > ul ul li a:hover{
     text-decoration: none;
     background-color: #FAFAFA;
@@ -88,11 +93,11 @@
 }
 
 #sidebar > ul ul li:first-child a{
-  border-top: 1px solid #5E626D;  
+  border-top: 1px solid #5E626D;
 }
 
 #sidebar > ul ul li:last-child a{
-  border-bottom: 1px solid #5E626D;  
+  border-bottom: 1px solid #5E626D;
 }
 
 .nav-tabs li.submenu a span.label{
@@ -211,7 +216,7 @@
 	margin-top: 4px;
 	border-style: solid;
 	border-width: 1px;
-	border-color: transparent;	
+	border-color: transparent;
 }
 /* Footer */
 #footer {
@@ -1037,10 +1042,10 @@ span.icon .checker {
 }
 
 .dataTables_paginate .first{
-    border-radius: 4px 0 0 4px;    
+    border-radius: 4px 0 0 4px;
 }
 .dataTables_paginate .last {
-    border-radius: 0 4px 4px 0;    
+    border-radius: 0 4px 4px 0;
 }
 .dataTables_paginate .ui-state-disabled, .fc-state-disabled, .pagination.alternate li.disabled a {
     color: #AAAAAA !important;
@@ -1110,7 +1115,7 @@ div.dataTables_wrapper .ui-widget-header {
 	background-color: #FFFFE3 !important;
 }
 /* Misc */
-.nopadding {	
+.nopadding {
 	padding: 0 !important;
 }
 .nopadding .table {
@@ -1318,7 +1323,7 @@ form {
 		top: 0;
 		min-width: 150px;
 		box-shadow: 0 1px 5px rgba(0,0,0,0.7);
-		border-radius: 5px;		
+		border-radius: 5px;
 		list-style: none;
 	}
 	#sidebar > ul ul li a {
