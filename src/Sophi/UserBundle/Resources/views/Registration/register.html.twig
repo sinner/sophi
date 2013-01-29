@@ -71,11 +71,11 @@
                 <noscript>
                     <div class="alert alert-block span10">
                         <h4 class="alert-heading">Warning!</h4>
-                        <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> enabled to use this site.</p>
+                        <p>Usted necesita tener el <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> habilitado para hacer uso de este Site.</p>
                     </div>
                 </noscript>
 
-                <div id="content">
+                <div id="content" style="margin-left: 2px;">
 
                     <!-- start: Content -->
                     {% block breadcrumb %}
@@ -89,7 +89,7 @@
                     {% endblock breadcrumb %}
 
                     {% block fos_user_content %}
-                        <!-- 
+                        <!--
                         <form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST" class="fos_user_registration_register">
                             {{ form_widget(form) }}
                             <div>
@@ -132,7 +132,7 @@
                                 <label class="control-label" for="optionsCheckbox2">Disabled checkbox</label>
                                 <div class="controls">
                                   <label class="checkbox">
-                                    <div id="uniform-optionsCheckbox2" class="checker disabled"><span><input type="checkbox" style="opacity: 0;" id="optionsCheckbox2" value="option1" disabled=""></span></div>
+                                    <div id="uniform-optionsCheckbox2" class="checker disabled"><span><input type="checkbox" style="opacity: 0;" id="optionsCheckbox2" value="option1"></span></div>
                                     This is a disabled checkbox
                                   </label>
                                 </div>
@@ -173,31 +173,31 @@
                               <div class="control-group">
                                 <label class="control-label" for="selectError">Modern Select</label>
                                 <div class="controls">
-                                  <select class="chzn-done" style="display: none;" id="selectError" data-rel="chosen">
+                                  <select class="chzn-select" style="width:500px;" id="selectError" data-rel="chosen">
                                     <option>Option 1</option>
                                     <option>Option 2</option>
                                     <option>Option 3</option>
                                     <option>Option 4</option>
                                     <option>Option 5</option>
-                                  </select><div style="width: 220px;" class="chzn-container chzn-container-single" id="selectError_chzn"><a href="javascript:void(0)" class="chzn-single"><span>Option 1</span><div><b></b></div></a><div class="chzn-drop" style="left: -9000px; width: 218px; top: 25px;"><div class="chzn-search"><input type="text" style="width: 183px;" autocomplete="off"></div><ul class="chzn-results"><li id="selectError_chzn_o_0" class="active-result result-selected" style="">Option 1</li><li id="selectError_chzn_o_1" class="active-result" style="">Option 2</li><li id="selectError_chzn_o_2" class="active-result" style="">Option 3</li><li id="selectError_chzn_o_3" class="active-result" style="">Option 4</li><li id="selectError_chzn_o_4" class="active-result" style="">Option 5</li></ul></div></div>
+                                  </select>
                                 </div>
                               </div>
                               <div class="control-group">
                                 <label class="control-label" for="selectError1">Multiple Select / Tags</label>
                                 <div class="controls">
-                                  <select class="chzn-done" style="display: none;" id="selectError1" multiple="" data-rel="chosen">
+                                  <select class="chzn-select" style="width:500px;" id="selectError1" multiple="" data-rel="chosen">
                                     <option>Option 1</option>
                                     <option selected="">Option 2</option>
                                     <option>Option 3</option>
                                     <option>Option 4</option>
                                     <option>Option 5</option>
-                                  </select><div style="width: 220px;" class="chzn-container chzn-container-multi" id="selectError1_chzn"><ul class="chzn-choices"><li class="search-choice" id="selectError1_chzn_c_1"><span>Option 2</span><a href="javascript:void(0)" class="search-choice-close" rel="1"></a></li><li class="search-field"><input type="text" value="Select Some Options" class="" autocomplete="off" style="width: 25px;"></li></ul><div class="chzn-drop" style="left: -9000px; width: 218px; top: 29px;"><ul class="chzn-results"><li id="selectError1_chzn_o_0" class="active-result" style="">Option 1</li><li id="selectError1_chzn_o_1" class="result-selected" style="">Option 2</li><li id="selectError1_chzn_o_2" class="active-result" style="">Option 3</li><li id="selectError1_chzn_o_3" class="active-result" style="">Option 4</li><li id="selectError1_chzn_o_4" class="active-result" style="">Option 5</li></ul></div></div>
+                                  </select>
                                 </div>
                               </div>
                               <div class="control-group">
                                 <label class="control-label" for="selectError2">Group Select</label>
                                 <div class="controls">
-                                    <select class="chzn-done" style="display: none;" data-placeholder="Your Favorite Football Team" id="selectError2" data-rel="chosen">
+                                    <select class="chzn-select" style="width:500px;" data-placeholder="Your Favorite Football Team" id="selectError2" data-rel="chosen">
                                         <option value=""></option>
                                         <optgroup label="NFC EAST">
                                           <option>Dallas Cowboys</option>
@@ -247,7 +247,23 @@
                                           <option>Oakland Raiders</option>
                                           <option>San Diego Chargers</option>
                                         </optgroup>
-                                  </select><div style="width: 220px;" class="chzn-container chzn-container-single" id="selectError2_chzn"><a href="javascript:void(0)" class="chzn-single chzn-default"><span>Your Favorite Football Team</span><div><b></b></div></a><div class="chzn-drop" style="left: -9000px; width: 218px; top: 25px;"><div class="chzn-search"><input type="text" style="width: 183px;" autocomplete="off"></div><ul class="chzn-results"><li id="selectError2_chzn_g_1" class="group-result">NFC EAST</li><li id="selectError2_chzn_o_2" class="active-result group-option" style="">Dallas Cowboys</li><li id="selectError2_chzn_o_3" class="active-result group-option" style="">New York Giants</li><li id="selectError2_chzn_o_4" class="active-result group-option" style="">Philadelphia Eagles</li><li id="selectError2_chzn_o_5" class="active-result group-option" style="">Washington Redskins</li><li id="selectError2_chzn_g_6" class="group-result">NFC NORTH</li><li id="selectError2_chzn_o_7" class="active-result group-option" style="">Chicago Bears</li><li id="selectError2_chzn_o_8" class="active-result group-option" style="">Detroit Lions</li><li id="selectError2_chzn_o_9" class="active-result group-option" style="">Green Bay Packers</li><li id="selectError2_chzn_o_10" class="active-result group-option" style="">Minnesota Vikings</li><li id="selectError2_chzn_g_11" class="group-result">NFC SOUTH</li><li id="selectError2_chzn_o_12" class="active-result group-option" style="">Atlanta Falcons</li><li id="selectError2_chzn_o_13" class="active-result group-option" style="">Carolina Panthers</li><li id="selectError2_chzn_o_14" class="active-result group-option" style="">New Orleans Saints</li><li id="selectError2_chzn_o_15" class="active-result group-option" style="">Tampa Bay Buccaneers</li><li id="selectError2_chzn_g_16" class="group-result">NFC WEST</li><li id="selectError2_chzn_o_17" class="active-result group-option" style="">Arizona Cardinals</li><li id="selectError2_chzn_o_18" class="active-result group-option" style="">St. Louis Rams</li><li id="selectError2_chzn_o_19" class="active-result group-option" style="">San Francisco 49ers</li><li id="selectError2_chzn_o_20" class="active-result group-option" style="">Seattle Seahawks</li><li id="selectError2_chzn_g_21" class="group-result">AFC EAST</li><li id="selectError2_chzn_o_22" class="active-result group-option" style="">Buffalo Bills</li><li id="selectError2_chzn_o_23" class="active-result group-option" style="">Miami Dolphins</li><li id="selectError2_chzn_o_24" class="active-result group-option" style="">New England Patriots</li><li id="selectError2_chzn_o_25" class="active-result group-option" style="">New York Jets</li><li id="selectError2_chzn_g_26" class="group-result">AFC NORTH</li><li id="selectError2_chzn_o_27" class="active-result group-option" style="">Baltimore Ravens</li><li id="selectError2_chzn_o_28" class="active-result group-option" style="">Cincinnati Bengals</li><li id="selectError2_chzn_o_29" class="active-result group-option" style="">Cleveland Browns</li><li id="selectError2_chzn_o_30" class="active-result group-option" style="">Pittsburgh Steelers</li><li id="selectError2_chzn_g_31" class="group-result">AFC SOUTH</li><li id="selectError2_chzn_o_32" class="active-result group-option" style="">Houston Texans</li><li id="selectError2_chzn_o_33" class="active-result group-option" style="">Indianapolis Colts</li><li id="selectError2_chzn_o_34" class="active-result group-option" style="">Jacksonville Jaguars</li><li id="selectError2_chzn_o_35" class="active-result group-option" style="">Tennessee Titans</li><li id="selectError2_chzn_g_36" class="group-result">AFC WEST</li><li id="selectError2_chzn_o_37" class="active-result group-option" style="">Denver Broncos</li><li id="selectError2_chzn_o_38" class="active-result group-option" style="">Kansas City Chiefs</li><li id="selectError2_chzn_o_39" class="active-result group-option" style="">Oakland Raiders</li><li id="selectError2_chzn_o_40" class="active-result group-option" style="">San Diego Chargers</li></ul></div></div>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="control-group">
+                                <label class="control-label" for="selectError2">Group Select</label>
+                                <div class="controls">
+                                  <select data-placeholder="Your Favorite Type of Bear" style="width:500px;" class="chzn-select-deselect" tabindex="7">
+                                        <option value=""></option>
+                                        <option>American Black Bear</option>
+                                        <option>Asiatic Black Bear</option>
+                                        <option>Brown Bear</option>
+                                        <option>Giant Panda</option>
+                                        <option selected>Sloth Bear</option>
+                                        <option>Sun Bear</option>
+                                        <option>Polar Bear</option>
+                                        <option>Spectacled Bear</option>
+                                  </select>
                                 </div>
                               </div>
                               <div class="form-actions">
@@ -256,10 +272,10 @@
                               </div>
                             </fieldset>
                           </form>
-                    
+
                     </div>
                 </div><!--/span-->
-            
+
             </div>
                     {% endblock fos_user_content %}
 
@@ -277,13 +293,36 @@
 
         </div><!--/.fluid-container-->
 
+        <div class="modal hide fade" id="myModal">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h3>Settings</h3>
+            </div>
+            <div class="modal-body">
+                <p>Here settings can be configured...</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn" data-dismiss="modal">Close</a>
+                <a href="#" class="btn btn-primary">Save changes</a>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
         <!-- start: JavaScript-->
 
         {% block javascripts_imports %}
             {% include '::javascript.html.twig' %}
         {% endblock javascripts_imports %}
 
-        {% block own_javascripts %}{% endblock own_javascripts %}
+        {% block own_javascripts %}
+        <script type="text/javascript">
+            //$(document).on('ready', function(){
+                $(".chzn-select").chosen();
+                $(".chzn-select-deselect").chosen({allow_single_deselect:true});
+            //});
+        </script>
+        {% endblock own_javascripts %}
 
         <!-- end: JavaScript-->
 
