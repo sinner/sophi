@@ -173,7 +173,7 @@
                               <div class="control-group">
                                 <label class="control-label" for="selectError">Modern Select</label>
                                 <div class="controls">
-                                  <select class="chzn-select" style="width:500px;" id="selectError" data-rel="chosen">
+                                  <select class="chzn-select1" style="width:500px;" id="selectError" data-rel="chosen">
                                     <option>Option 1</option>
                                     <option>Option 2</option>
                                     <option>Option 3</option>
@@ -185,7 +185,7 @@
                               <div class="control-group">
                                 <label class="control-label" for="selectError1">Multiple Select / Tags</label>
                                 <div class="controls">
-                                  <select class="chzn-select" style="width:500px;" id="selectError1" multiple="" data-rel="chosen">
+                                  <select class="chzn-select2" style="width:500px;" id="selectError1" multiple="" data-rel="chosen">
                                     <option>Option 1</option>
                                     <option selected="">Option 2</option>
                                     <option>Option 3</option>
@@ -197,7 +197,7 @@
                               <div class="control-group">
                                 <label class="control-label" for="selectError2">Group Select</label>
                                 <div class="controls">
-                                    <select class="chzn-select" style="width:500px;" data-placeholder="Your Favorite Football Team" id="selectError2" data-rel="chosen">
+                                    <select class="chzn-select3" style="width:500px;" data-placeholder="Your Favorite Football Team" id="selectError2" data-rel="chosen">
                                         <option value=""></option>
                                         <optgroup label="NFC EAST">
                                           <option>Dallas Cowboys</option>
@@ -318,7 +318,9 @@
         {% block own_javascripts %}
         <script type="text/javascript">
             //$(document).on('ready', function(){
-                $(".chzn-select").chosen();
+                $(".chzn-select1").chosen();
+                $(".chzn-select2").chosen();
+                $(".chzn-select3").chosen();
                 $(".chzn-select-deselect").chosen({allow_single_deselect:true});
             //});
         </script>
