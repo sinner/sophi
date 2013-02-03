@@ -29,7 +29,7 @@ Cómo usarlo
 1.- Se debe crear el archivo parameters.yml, por ejemplo utilizando SQLite:
 
     parameters:
-        database_driver: sqlite
+        database_driver: pdo_sqlite
         database_host: localhost
         database_port: null
         database_name: sophi
