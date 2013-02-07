@@ -61,14 +61,14 @@
             <div align="center">
                 <span style="position: relative; top: -5px;">Recu&eacute;rdame:</span>
                 <input type="checkbox" id="remember_me" name="_remember_me" value="on" class="regular-checkbox" />
-                <label for="remember_me" title="Recordar la Sesi&oacute;n"></label>
+                <label title="Recordar mi Sesión" for="remember_me"></label>
             </div>
 
         </section>
 
         {% if not is_granted("IS_AUTHENTICATED_REMEMBERED") %}
         <blockquote class="oval-thought" style="bottom: 100px; right: 20px; position: absolute;">
-            <p>No posees usuario? <b><a style="color:#FFFFFF;" href="{{ path('fos_user_registration_register') }}">Reg&iacute;strate Gratis!</a></b></p>
+            <p>No posees usuario? <b><a style="color:#FFFFFF;" href="{{ path('fos_user_registration_register') }}">Reg&iacute;strate!</a></b></p>
         </blockquote>
         {% endif %}
 
