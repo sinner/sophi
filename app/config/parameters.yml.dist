@@ -1,0 +1,14 @@
+parameters:
+    database_driver: pdo_sqlite
+    database_host: localhost
+    database_port: null
+    database_name: sophi
+    database_user: null
+    database_password: 
+    mailer_transport: smtp
+    mailer_host: localhost
+    mailer_user: null
+    mailer_password: null
+    locale: es
+    secret: 42c910103a3d5221ccbd110855578d2122
+    database_path: %kernel.root_dir%/database/sophi.sqlite
