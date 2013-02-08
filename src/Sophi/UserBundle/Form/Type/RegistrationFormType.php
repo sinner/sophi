@@ -31,6 +31,8 @@
                     'options' => array('translation_domain' => 'FOSUserBundle'),
                     'first_options' => array('label' => 'Clave'),
                     'second_options' => array('label' => 'Confirme su Clave'),
+                    'first_name'=>'first', 
+                    'second_name'=>'confirm',
                     'invalid_message' => 'La clave y su confirmación no coinciden.',
                 ))
             ;
