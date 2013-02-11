@@ -17,7 +17,7 @@
         <!-- start: CSS -->
 
         {% block styles_imports %}
-
+            <link type='text/css' rel="stylesheet" href="{{ asset('bundles/sophicore/css/bubble.css') }}" />
         {% endblock styles_imports %}
 
         {% block own_styles %}{% endblock own_styles %}
@@ -78,16 +78,22 @@
                     <![endif]-->
 
                     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                    <div class="warningBox">
+                    <div class="warningBox" style="margin-left: 21%;width: 60%;">
                         <p>Usted posee actualmente una sesi&oacute;n activa con el usuario 
                             <b>{{ app.user.completeName }} ({{ app.user.username }})</b>.
                         </p>
                         <p>
                             Si usted no es <b>{{ app.user.completeName }}</b> puede 
                             <a href="{{ path('fos_user_security_logout') }}">
-                                <b>Cerrar esta sesi&oacute;n e iniciar con otro usuario.</b>
-                            </a>
+                                <b>Cerrar</b> 
+                            </a> 
+                            esta sesi&oacute;n e iniciar con otro usuario.
                         </p>
+                        {% for key, message in app.session.getFlashes() %}
+                            <p class="{{ key }}Box">
+                                {{ message|trans({}, 'FOSUserBundle') }}
+                            </p>
+                        {% endfor %}
                     </div>
                     {% endif %}
 

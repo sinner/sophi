@@ -128,9 +128,8 @@ body {
     margin-right: 0;
     padding-bottom: 25px;
     position: relative;
-    min-height: 800px;
+    min-height: auto;
     width: auto;
-
     border-top-left-radius: 8px;
 }
 
@@ -1187,6 +1186,13 @@ div.dataTables_wrapper .ui-widget-header {
 .help-block, .help-inline {
     color: #999999;
 }
+
+.help-block ul, .help-block ul li, .help-inline ul, .help-inline ul li { 
+    list-style-type: none; 
+    margin-bottom: 2px;
+    margin-left: 0px;
+}
+
 /* Responsive design */
 @media (max-width: 480px) {
 	#header h1 {

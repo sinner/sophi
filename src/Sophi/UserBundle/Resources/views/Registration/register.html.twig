@@ -24,50 +24,50 @@
 
                         <fieldset>
 
-                            <div class="control-group">
-                                <label class="control-label" for="username">{{ form_label(form.username, 'Usuario') }}</label>
+                            <div class="control-group {% if form_errors(form.username)|length > 0 %}error{% endif %}">
+                                <label class="control-label" for="username">{{form_label(form.username, 'Usuario')}}</label>
                                 <div class="controls">
-                                    {{ form_widget(form.username, {'id': 'username', 'attr': {'maxlength': '100', 'placeholder':'Ingrese su nombre de Usuario', 'class':'span8'}}) }}
+                                    {{ form_widget(form.username, {'id': 'username', 'attr': {'maxlength': '100', 'placeholder':'Ingrese su nombre de Usuario', 'class':'span6'}}) }}
                                     <span class="help-inline">{{ form_errors(form.username) }}</span>
                                 </div>
                             </div>
 
-                            <div class="control-group">
-                                <label class="control-label" for="email">{{ form_label(form.email, 'E-Mail') }}</label>
+                            <div class="control-group {% if form_errors(form.email)|length > 0 %}error{% endif %}">
+                                <label class="control-label" for="email">{{form_label(form.email,'E-Mail')}}</label>
                                 <div class="controls">
-                                    {{ form_widget(form.email, {'id': 'email', 'attr': {'maxlength': '100', 'placeholder':'Ingrese su Correo Electrónico', 'class':'span8'}}) }}
+                                    {{ form_widget(form.email, {'id': 'email', 'attr': {'maxlength': '100', 'placeholder':'Ingrese su Correo Electrónico', 'class':'span6'}}) }}
                                     <span class="help-inline">{{ form_errors(form.email) }}</span>
                                 </div>
                             </div>
 
-                            <div class="control-group">
-                                <label class="control-label" for="firstName">{{ form_label(form.firstName, 'Nombre') }}</label>
+                            <div class="control-group {% if form_errors(form.firstName)|length > 0 %}error{% endif %}">
+                                <label class="control-label" for="firstName">{{form_label(form.firstName, 'Nombre')}}</label>
                                 <div class="controls">
-                                    {{ form_widget(form.firstName, {'id': 'firstName', 'attr': {'maxlength': '100', 'placeholder':'Ingrese su Nombre Real', 'class':'span8'}}) }}
+                                    {{ form_widget(form.firstName, {'id': 'firstName', 'attr': {'maxlength': '100', 'placeholder':'Ingrese su Nombre', 'class':'span6'}}) }}
                                     <span class="help-inline">{{ form_errors(form.firstName) }}</span>
                                 </div>
                             </div>
 
-                            <div class="control-group">
-                                <label class="control-label" for="lastName">{{ form_label(form.lastName, 'Apellido') }}</label>
+                            <div class="control-group {% if form_errors(form.lastName)|length > 0 %}error{% endif %}">
+                                <label class="control-label" for="lastName">{{form_label(form.lastName,'Apellido')}}</label>
                                 <div class="controls">
-                                    {{ form_widget(form.lastName, {'id': 'lastName', 'attr': {'maxlength': '100', 'placeholder':'Ingrese su Apellido Real', 'class':'span8'}}) }}
+                                    {{ form_widget(form.lastName, {'id': 'lastName', 'attr': {'maxlength': '100', 'placeholder':'Ingrese su Apellido', 'class':'span6'}}) }}
                                     <span class="help-inline">{{ form_errors(form.lastName) }}</span>
                                 </div>
                             </div>
 
-                            <div class="control-group">
-                                <label class="control-label" for="clave">{{ form_label(form.plainPassword.first, 'Clave') }}</label>
+                            <div class="control-group {% if form_errors(form.plainPassword.first)|length > 0 %}error{% endif %}">
+                                <label class="control-label" for="clave">{{form_label(form.plainPassword.first,'Clave')}}</label>
                                 <div class="controls">
-                                    {{ form_widget(form.plainPassword.first, {'id': 'clave', 'attr': {'maxlength': '100', 'placeholder':'Ingrese su Clave', 'class':'span8'}}) }}
+                                    {{ form_widget(form.plainPassword.first, {'id': 'clave', 'attr': {'maxlength': '100', 'placeholder':'Ingrese su Clave', 'class':'span6'}}) }}
                                     <span class="help-inline">{{ form_errors(form.plainPassword.first) }}</span>
                                 </div>
                             </div>
 
-                            <div class="control-group">
+                            <div class="control-group {% if form_errors(form.plainPassword.confirm)|length > 0 %}error{% endif %}">
                                 <label class="control-label" for="confirm">{{ form_label(form.plainPassword.confirm, 'Confirme la Clave') }}</label>
                                 <div class="controls">
-                                    {{ form_widget(form.plainPassword.confirm, {'id': 'confirm', 'attr': {'maxlength': '100', 'placeholder':'Confirme su Clave', 'class':'span8'}}) }}
+                                    {{ form_widget(form.plainPassword.confirm, {'id': 'confirm', 'attr': {'maxlength': '100', 'placeholder':'Confirme su Clave', 'class':'span6'}}) }}
                                     <span class="help-inline">{{ form_errors(form.plainPassword.confirm) }}</span>
                                 </div>
                             </div>
