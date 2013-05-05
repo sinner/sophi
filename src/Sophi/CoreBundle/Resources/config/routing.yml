@@ -1,3 +1,0 @@
-sophi_admin:
-    pattern:   /admin_example/
-    defaults:  { _controller: SophiCoreBundle:Default:index }
